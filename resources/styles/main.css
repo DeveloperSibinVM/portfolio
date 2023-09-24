@@ -1,0 +1,207 @@
+:root {
+    --primaryColor: #565656;
+    --secondaryColor: #999;
+    --green: #28e98c; 
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #181818 !important;
+    color: white;
+}
+.main {
+    padding: 20px;
+}
+.sticky-container {
+    border: 1px solid var(--primaryColor);
+    border-radius: 50px;
+    height: fit-content;
+    position: fixed;
+
+}
+.sticky-container .profile-pic-container {
+    width: 100%;
+    overflow: hidden;
+    aspect-ratio: 1;
+    padding: 0;
+    border-radius: 50px;
+}
+.sticky-container .profile-pic-container img {
+    object-fit: contain;
+    width: 100%;
+}
+.sticky-container .third-div p {
+    font-size: 27px;
+    font-weight: 300;
+    padding: 0;
+}
+.sticky-container .fifth-div a {
+    padding: 18px 20px;
+    border: 2px solid var(--primaryColor);
+    border-radius: 100%;
+    text-decoration: none;
+    color: var(--secondaryColor);
+}
+.sticky-container .fifth-div a i {
+    font-size: 20px;
+}
+.sticky-container .fifth-div a:hover {
+    color: var(--green);
+    border-color: var(--green);
+}
+.sticky-container .sixth-div a {
+    padding: 18px;
+    background-color: var(--green);
+    border-radius: 50px;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.introduce .first-div .heading {
+    padding: 8px 22px;
+    border: 1px solid var(--secondaryColor);
+    border-radius: 50px;
+    width: fit-content;
+}
+.introduce .first-div .nav-icon-container {
+    padding: 20px 25px;
+    border: 1px solid var(--secondaryColor);
+    border-radius: 100%;
+    width: fit-content;
+}
+.introduce .second-div p {
+    font-size: 85px;
+}
+.introduce .second-div p span {
+    color: var(--green);
+}
+.introduce .third-div p {
+    font-size: 22px;
+    color: var(--secondaryColor);
+}
+.introduce .fourth-div .my-project-circle {
+    padding: 80px 84px;
+    border: 1px solid var(--secondaryColor);
+    width: fit-content;
+    border-radius: 100%;
+    position: relative;
+    animation-name: rotate;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes rotate{
+    from{ transform: rotate(-360deg); }
+    to{ transform: rotate(360deg); }
+}
+.introduce .fourth-div .download-arrow {
+    padding: 80px 84px;
+    width: fit-content;
+    position: absolute;
+}
+.introduce .fourth-div .my-project-circle h2 {
+    position: absolute;
+    font-size: 20px !important;
+    line-height: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.introduce .fourth-div .download-arrow i {
+    font-size: 25px;
+}
+.introduce .fourth-div .my-project-circle i {
+    font-size: 25px;
+    visibility: hidden;
+}
+.introduce .fifth-div h1 {
+    font-size: 70px;
+    color: var(--green);
+}
+
+.about .first-div .heading, .resume .first-div .heading, .services .first-div .heading, .skills .first-div .heading {
+    padding: 8px 22px;
+    border: 1px solid var(--secondaryColor);
+    border-radius: 50px;
+    width: fit-content;
+}
+.about .second-div h1 {
+    font-size: 50px;
+}
+.about .second-div span {
+    color: var(--green);
+}
+.about .third-div p {
+    color: var(--primaryColor);
+    font-size: 20px;
+}
+.resume .second-div h1 {
+    font-size: 50px;
+}
+.resume .second-div span {
+    color: var(--green);
+}
+.resume .third-div p, .services .service-div p {
+    color: var(--primaryColor);
+    font-size: 20px;
+}
+.resume .experience {
+    padding-left: 80px;
+    border-left: 1px solid var(--primaryColor);
+    position: relative;
+}
+.resume .experience:hover .years {
+    color: var(--green);
+}
+.resume .border-round {
+    width: 15px;
+    height: 15px;
+    background-color: var(--primaryColor);
+    border-radius: 100%;
+    position: absolute;
+    left: -8px;
+}
+
+.services .second-div h1 {
+    font-size: 50px;
+}
+.services .second-div span {
+    color: var(--green);
+}
+.services .service-div, .skills .skill-div div {
+    border: 1px solid var(--primaryColor);
+    border-radius: 25px;
+    padding: 40px;
+}
+.skills .skill-div div {
+    border-radius: 100px;
+    padding: 45px;
+}
+.services .service-div:hover, .skills .skill-div:hover div{
+    border-color: var(--green);
+}
+.services .service-div a {
+    text-decoration: none;
+    color: var(--secondaryColor);
+}
+.services .service-div h2 span {
+    float: right;
+    color: var(--green);
+}
+.skills .second-div h1 {
+    font-size: 50px;
+}
+.skills .second-div span {
+    color: var(--green);
+}
+.skills .skill-div {
+    width: min-content;
+}
+.skills .skill-div h2 {
+    font-size: 70px;
+}
+.skills .skill-div p {
+    font-size: 35px;
+    color: var(--green);
+}
