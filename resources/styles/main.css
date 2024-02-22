@@ -1,7 +1,7 @@
 :root {
     --primaryColor: #565656;
     --secondaryColor: #999;
-    --green: #28e98c; 
+    --highlightColor: #e96c28; 
 }
 body {
     margin: 0;
@@ -17,41 +17,54 @@ body {
     border-radius: 50px;
     height: fit-content;
     position: fixed;
+    height: 95vh;
 
 }
 .sticky-container .profile-pic-container {
-    width: 100%;
+    width: 60%;
     overflow: hidden;
     aspect-ratio: 1;
     padding: 0;
     border-radius: 50px;
+}
+.sticky-container .profile-pic-container-inner {
+    position: relative;
+    width: 100%;
+}
+.sticky-container .profile-pic-container-inner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255, 0, 0, 0.5), rgba(0, 0, 255, 0.5));
 }
 .sticky-container .profile-pic-container img {
     object-fit: contain;
     width: 100%;
 }
 .sticky-container .third-div p {
-    font-size: 27px;
+    font-size: 22px;
     font-weight: 300;
     padding: 0;
 }
 .sticky-container .fifth-div a {
-    padding: 18px 20px;
+    padding: 10px 15px;
     border: 2px solid var(--primaryColor);
     border-radius: 100%;
     text-decoration: none;
     color: var(--secondaryColor);
 }
 .sticky-container .fifth-div a i {
-    font-size: 20px;
+    font-size: 15px;
 }
 .sticky-container .fifth-div a:hover {
-    color: var(--green);
-    border-color: var(--green);
+    color: var(--highlightColor);
+    border-color: var(--highlightColor);
 }
 .sticky-container .sixth-div a {
-    padding: 18px;
-    background-color: var(--green);
+    padding: 12px;
+    background-color: var(--highlightColor);
     border-radius: 50px;
     color: black;
     text-decoration: none;
@@ -74,7 +87,7 @@ body {
     font-size: 85px;
 }
 .introduce .second-div p span {
-    color: var(--green);
+    color: var(--highlightColor);
 }
 .introduce .third-div p {
     font-size: 22px;
@@ -117,7 +130,7 @@ body {
 }
 .introduce .fifth-div h1 {
     font-size: 70px;
-    color: var(--green);
+    color: var(--highlightColor);
 }
 
 .about .first-div .heading, .resume .first-div .heading, .services .first-div .heading, .skills .first-div .heading {
@@ -130,7 +143,7 @@ body {
     font-size: 50px;
 }
 .about .second-div span {
-    color: var(--green);
+    color: var(--highlightColor);
 }
 .about .third-div p {
     color: var(--primaryColor);
@@ -140,7 +153,7 @@ body {
     font-size: 50px;
 }
 .resume .second-div span {
-    color: var(--green);
+    color: var(--highlightColor);
 }
 .resume .third-div p, .services .service-div p {
     color: var(--primaryColor);
@@ -152,7 +165,7 @@ body {
     position: relative;
 }
 .resume .experience:hover .years {
-    color: var(--green);
+    color: var(--highlightColor);
 }
 .resume .border-round {
     width: 15px;
@@ -167,7 +180,7 @@ body {
     font-size: 50px;
 }
 .services .second-div span {
-    color: var(--green);
+    color: var(--highlightColor);
 }
 .services .service-div, .skills .skill-div div {
     border: 1px solid var(--primaryColor);
@@ -179,7 +192,7 @@ body {
     padding: 45px;
 }
 .services .service-div:hover, .skills .skill-div:hover div{
-    border-color: var(--green);
+    border-color: var(--highlightColor);
 }
 .services .service-div a {
     text-decoration: none;
@@ -187,13 +200,13 @@ body {
 }
 .services .service-div h2 span {
     float: right;
-    color: var(--green);
+    color: var(--highlightColor);
 }
 .skills .second-div h1 {
     font-size: 50px;
 }
 .skills .second-div span {
-    color: var(--green);
+    color: var(--highlightColor);
 }
 .skills .skill-div {
     width: min-content;
@@ -203,5 +216,5 @@ body {
 }
 .skills .skill-div p {
     font-size: 35px;
-    color: var(--green);
+    color: var(--highlightColor);
 }
